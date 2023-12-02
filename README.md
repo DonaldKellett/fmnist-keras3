@@ -14,6 +14,12 @@ Install project dependencies:
 pip install -r requirements.txt
 ```
 
+Set PyTorch as the backend for Keras \(you may want to save this in your `$HOME/.bashrc` as well\):
+
+```bash
+export KERAS_BACKEND='torch'
+```
+
 Now train the model:
 
 ```bash
