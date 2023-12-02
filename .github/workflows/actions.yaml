@@ -9,6 +9,8 @@ jobs:
     container:
       image: python:3.11-bookworm
     steps:
+    - name: Checkout
+      uses: actions/checkout@v3
     - name: Install pip dependencies
       run: |
         pip install -r requirements.txt
